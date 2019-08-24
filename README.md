@@ -1,13 +1,13 @@
 # [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
-* "=>" return a value
-* "=" return an array
+* "=>" update the array
+* "=" return a value
 
 ## Properties
 
 ### [length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length)
 
-[🍐, 🍏, 🍓, 🍌, 🍇].length => 5
+[🍐, 🍏, 🍓, 🍌, 🍇].length = 5
 
 ## Methods
 
@@ -17,7 +17,11 @@ Array.from('🍐🍏🍓🍌🍇') = [🍐, 🍏, 🍓, 🍌, 🍇]
 
 ### [isArray](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)
 
-Array.isArray([🍐, 🍏, 🍓, 🍌, 🍇]) => ✔
+Array.isArray([🍐, 🍏, 🍓, 🍌, 🍇]) = ✔
+
+### [of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of)
+
+Array.of(🍐, 🍏, 🍓, 🍌, 🍇) = [🍐, 🍏, 🍓, 🍌, 🍇]
 
 ### [concat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
 
@@ -31,14 +35,14 @@ Array.isArray([🍐, 🍏, 🍓, 🍌, 🍇]) => ✔
 
 ### [every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
 
-[🍌, 🍌, 🍌, 🍌, 🍌].every(vegetable => 🍌) => ✔  
-[🥔, 🥕, 🍓, 🍏, 🍌].every(vegetable => 🍌) => ✘
+[🍌, 🍌, 🍌, 🍌, 🍌].every(vegetable => 🍌) = ✔  
+[🥔, 🥕, 🍓, 🍏, 🍌].every(vegetable => 🍌) = ✘
 
 ### [fill](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)
 
-[🥔, 🥕, 🍐, 🍏, 🍓].fill(🍌, 2, 4) = [🥔, 🥕, 🍌, 🍌, 🍓]  
-[🥔, 🥕, 🍐, 🍏, 🍓].fill(🍌, 1)    = [🥔, 🍌, 🍌, 🍌, 🍌]  
-[🥔, 🥕, 🍐, 🍏, 🍓].fill(🍌)       = [🍌, 🍌, 🍌, 🍌, 🍌]
+[🥔, 🥕, 🍐, 🍏, 🍓].fill(🍌, 2, 4) => [🥔, 🥕, 🍌, 🍌, 🍓]  
+[🥔, 🥕, 🍐, 🍏, 🍓].fill(🍌, 1)    => [🥔, 🍌, 🍌, 🍌, 🍌]  
+[🥔, 🥕, 🍐, 🍏, 🍓].fill(🍌)       => [🍌, 🍌, 🍌, 🍌, 🍌]
 
 ### [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
@@ -46,17 +50,20 @@ Array.isArray([🍐, 🍏, 🍓, 🍌, 🍇]) => ✔
 
 ### [find](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
 
-[🥒, 🥔, 🥕, 🍓, 🍏].find(vegetable => fruit) => 🍓  
-[🥒, 🥔, 🥕, 🍓, 🍏].find(vegetable => cloth) => undefined
+[🥒, 🥔, 🥕, 🍓, 🍏].find(vegetable => fruit) = 🍓  
+[🥒, 🥔, 🥕, 🍓, 🍏].find(vegetable => cloth) = undefined
 
 ### [findIndex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)
 
-[🥒, 🥔, 🥕, 🍓, 🍏].findIndex(vegetable => 🍓)    =>  3  
-[🥒, 🥔, 🥕, 🍓, 🍏].findIndex(vegetable => cloth) => -1
+[🥒, 🥔, 🥕, 🍓, 🍏].findIndex(vegetable => 🍓)    =  3  
+[🥒, 🥔, 🥕, 🍓, 🍏].findIndex(vegetable => cloth) = -1
 
-### ⚠ [flat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)
+### [flat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)
 
-### ⚠ [flatMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap)
+[🍕, 🍝, [🥒, 🥔]].flat() = [🍕, 🍝, 🥒, 🥔]  
+[🍕, 🍝, [🥒, 🥔, [🐱, 🐶]]].flat(2) = [🍕, 🍝, 🥒, 🥔, 🐱, 🐶]
+
+### [flatMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap)
 
 ### [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
@@ -64,26 +71,26 @@ Array.isArray([🍐, 🍏, 🍓, 🍌, 🍇]) => ✔
 
 ### [includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
 
-[🐱, 🐶, 🦇, 🐷, 🐮].includes(🐷) => ✔  
-[🐱, 🐶, 🦇, 🐷, 🐮].includes(🐔) => ✘
+[🐱, 🐶, 🦇, 🐷, 🐮].includes(🐷) = ✔  
+[🐱, 🐶, 🦇, 🐷, 🐮].includes(🐔) = ✘
 
 ### [indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
 
-[🐜, 🐪, 🦇, 🦆, 🦇].indexOf(🦇)    =>  2  
-[🐜, 🐪, 🦇, 🦆, 🦇].indexOf(🦇, 2) =>  4  
-[🐜, 🐪, 🦇, 🦆, 🦇].indexOf(🐔)    => -1
+[🐜, 🐪, 🦇, 🦆, 🦇].indexOf(🦇)    =  2  
+[🐜, 🐪, 🦇, 🦆, 🦇].indexOf(🦇, 2) =  4  
+[🐜, 🐪, 🦇, 🦆, 🦇].indexOf(🐔)    = -1
 
 ### [join](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 
-[🌬, 🔥, 🌧].join()   => '🌬,🔥,🌧'  
-[🌬, 🔥, 🌧].join(🐔) => '🌬🐔🔥🐔🌧'
+[🌬, 🔥, 🌧].join()   = '🌬,🔥,🌧'  
+[🌬, 🔥, 🌧].join(🐔) = '🌬🐔🔥🐔🌧'
 
 ### [lastIndexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf)
 
-[🐜, 🐪, 🦇, 🦆, 🦇].lastIndexOf(🦇)    =>  4  
-[🐜, 🐪, 🦇, 🦆, 🦇].lastIndexOf(🐪)    =>  1  
-[🐜, 🐪, 🦇, 🦆, 🦇].lastIndexOf(🐔)    => -1  
-[🐜, 🐪, 🦇, 🦆, 🦇].lastIndexOf(🦇, 3) =>  4
+[🐜, 🐪, 🦇, 🦆, 🦇].lastIndexOf(🦇)    =  4  
+[🐜, 🐪, 🦇, 🦆, 🦇].lastIndexOf(🐪)    =  1  
+[🐜, 🐪, 🦇, 🦆, 🦇].lastIndexOf(🐔)    = -1  
+[🐜, 🐪, 🦇, 🦆, 🦇].lastIndexOf(🦇, 3) =  4
 
 ### [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
@@ -91,22 +98,28 @@ Array.isArray([🍐, 🍏, 🍓, 🍌, 🍇]) => ✔
 
 ### [pop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
 
+[🥔, 🥕, 🍐, 🍏, 🍓].pop() = 🍓  
 [🥔, 🥕, 🍐, 🍏, 🍓].pop() => [🥔, 🥕, 🍐, 🍏]
 
 ### [push](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
 
+[🐷, 🐐, 🐑].push([🐮, 🐔]) = 5  
 [🐷, 🐐, 🐑].push([🐮, 🐔]) => [🐷, 🐐, 🐑, 🐮, 🐔]
 
 ### [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 
 [🐮, 🐷].reduce((accumulator, ingredient) => 🔪, initialValue) = 🍖
 
+### [reduceRight](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceRight)
+
 ### [reverse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)
 
-[🥔, 🥕, 🍐, 🍏, 🍓].reverse() = [🍓, 🍏, 🍐, 🥕, 🥔]
+[🥔, 🥕, 🍐, 🍏, 🍓].reverse() = [🍓, 🍏, 🍐, 🥕, 🥔]  
+[🥔, 🥕, 🍐, 🍏, 🍓].reverse() => [🍓, 🍏, 🍐, 🥕, 🥔]
 
 ### [shift](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
 
+[🐷, 🐐, 🐑, 🐮, 🐔].shift() = 🐷  
 [🐷, 🐐, 🐑, 🐮, 🐔].shift() => [🐐, 🐑, 🐮, 🐔]  
 [].shift() => undefined
 
@@ -119,8 +132,8 @@ Array.isArray([🍐, 🍏, 🍓, 🍌, 🍇]) => ✔
 
 ### [some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
 
-[🥒, 🥔, 🥕, 🍓, 🍏].some(vegetable => fruit) => true  
-[🥒, 🥔, 🥕, 🍄, 🥗].some(vegetable => fruit) => false
+[🥒, 🥔, 🥕, 🍓, 🍏].some(vegetable => fruit) = true  
+[🥒, 🥔, 🥕, 🍄, 🥗].some(vegetable => fruit) = false
 
 ### [sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 
@@ -128,13 +141,14 @@ Array.isArray([🍐, 🍏, 🍓, 🍌, 🍇]) => ✔
 
 ### [splice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
 
-[🥒, 🥕, 🍄, 🥗].splice(1, 0, 🥔) = [🥒, 🥔, 🥕, 🍄, 🥗]  
-[🥒, 🥕, 🍄, 🥗].splice(3, 1, 🥔) = [🥒, 🥕, 🍄, 🥔]
+[🥒, 🥕, 🍄, 🥗].splice(1, 0, 🥔) => [🥒, 🥔, 🥕, 🍄, 🥗]  
+[🥒, 🥕, 🍄, 🥗].splice(3, 1, 🥔) => [🥒, 🥕, 🍄, 🥔]
 
 ### [toString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString)
 
-[🥒, 🥔, 🥕, 🍄, 🥗].toString() => '🥒, 🥔, 🥕, 🍄, 🥗'
+[🥒, 🥔, 🥕, 🍄, 🥗].toString() = '🥒, 🥔, 🥕, 🍄, 🥗'
 
 ### [unshift](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
 
+[🐷, 🐐, 🐑].unshift(🐮, 🐔) = 5  
 [🐷, 🐐, 🐑].unshift(🐮, 🐔) => [🐮, 🐔, 🐷, 🐐, 🐑]
