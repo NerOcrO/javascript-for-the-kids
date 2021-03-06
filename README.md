@@ -46,7 +46,8 @@ Array.of(🍐, 🍏, 🍓, 🍌, 🍇) = [🍐, 🍏, 🍓, 🍌, 🍇]
 
 ### [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
-[🍕, 🍝, 🌭, 🍔, 🍟].filter(ingredient => 🇮🇹) = [🍕, 🍝]
+[🍕, 🍝, 🌭, 🍔, 🍟].filter(ingredient => 🇮🇹) = [🍕, 🍝]  
+[🍕, 🍝, 🌭, 🍔, 🍟].filter(ingredient => FR) = []
 
 ### [find](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
 
